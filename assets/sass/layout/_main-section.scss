@@ -1,0 +1,100 @@
+main{
+    hr{
+        margin: 4% 0;
+        padding: 0;
+    }
+    section{
+        padding: 4% 5%;
+        background-color: white;
+        
+        @extend article;
+
+        h6{
+            padding: 2% 0;
+        }
+        p{
+            span{
+                color: $mailcolor;
+            }
+        }
+        
+    }
+
+    div{padding-left: 5%;
+        
+        button{
+            border: none;
+            background-color: $normalbuttoncolor;
+            color: white;
+            padding: 0.7%;
+        
+        }
+        button:hover{
+            background-color: $hoverbuttoncolor;
+            
+        }
+        button:active{
+            border: 2px solid gray;
+        }
+        
+        
+    
+    
+    }
+    article{
+        
+        .artdiv1{
+            text-align: center;
+            padding: 4% 0% 4% 5%;
+           
+            img{
+                border-radius: 100%;
+                border: 1px solid black;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .artdiv2{
+            
+            padding: 8% 0% 4% 5%;
+            max-width: 100%;
+            p{
+                color:$mailcolor;
+                line-height: 0%;
+                
+            }
+        }
+        .artdiv3{
+           
+            padding: 8% 5% 4% 0%;
+           
+        }
+    }
+    aside{
+        padding: 4% 0;
+        text-align: center;
+        background-color: $asidebg;
+        div{
+            #buttonleft{
+                border-radius: 50px 0 0 50px;
+                width: 80px;
+            }
+            #buttonright{
+                border-radius: 0 50px 50px 0;
+                width: 80px;
+            }
+         
+            button:active{
+                background-color: $hoverbuttoncolor;
+            }
+            button{
+                border: 1px solid rgb(219, 219, 219);
+                width: 20px;
+                background-color: white;
+                color: black;
+            }
+        }
+        }
+        
+    
+}
